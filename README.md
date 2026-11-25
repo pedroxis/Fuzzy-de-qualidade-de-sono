@@ -9,14 +9,18 @@ Porém, isso deixaria o programa menos atual, além de ter a necessidade de abri
 
 Lembrando que as instruções são para rodar o código em um ambiente virtual venv.
 
-#Preparação do ambiente:
+## Preparação do ambiente:
 
+```bash
 sudo apt install python3-tk
 python3 -m venv .venv
 source .venv/bin/activate
+```
 
-#Instalando as dependências e rodando o programa:
+## Instalando as dependências e rodando o programa:
 
+```bash
 pip install -r requirements.txt
 
 python3 ex4.py
+```
