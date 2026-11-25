@@ -1,6 +1,12 @@
 import numpy as np
+
 import skfuzzy as fuzz
+
+import matplotlib
+matplotlib.use("Agg")
+
 import matplotlib.pyplot as plt
+
 from skfuzzy import control as ctrl
 
 # 1) Variáveis linguísticas e seus universos
