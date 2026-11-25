@@ -39,5 +39,14 @@ sistema.compute()
 print(f"Qualidade do sono: {sistema.output['qualidade']:.1f}/100")
 
 # Gráficos das funções de pertinência e do resultado
-horas.view(); desp.view(); qual.view(sistema)
-plt.show()
+horas.view()
+plt.savefig("pertinencia_horas.png", dpi=150)
+plt.close()
+
+desp.view()
+plt.savefig("pertinencia_despertares.png", dpi=150)
+plt.close()
+
+qual.view(sistema)
+plt.savefig("resultado_qualidade.png", dpi=150)
+plt.close()
