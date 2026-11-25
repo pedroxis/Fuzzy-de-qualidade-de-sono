@@ -1,12 +1,6 @@
 import numpy as np
-
 import skfuzzy as fuzz
-
-import matplotlib
-matplotlib.use("Agg")
-
 import matplotlib.pyplot as plt
-
 from skfuzzy import control as ctrl
 
 # 1) Variáveis linguísticas e seus universos
@@ -45,14 +39,5 @@ sistema.compute()
 print(f"Qualidade do sono: {sistema.output['qualidade']:.1f}/100")
 
 # Gráficos das funções de pertinência e do resultado
-horas.view()
-plt.savefig("pertinencia_horas.png", dpi=150)
-plt.close()
-
-desp.view()
-plt.savefig("pertinencia_despertares.png", dpi=150)
-plt.close()
-
-qual.view(sistema)
-plt.savefig("resultado_qualidade.png", dpi=150)
-plt.close()
+horas.view(); desp.view(); qual.view(sistema)
+plt.show()
