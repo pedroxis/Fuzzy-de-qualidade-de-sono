@@ -1,0 +1,5 @@
+matplotlib
+numpy
+scikit_fuzzy
+scipy
+networkx
